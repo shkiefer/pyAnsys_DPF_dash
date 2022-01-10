@@ -9,7 +9,7 @@ See [Medium article](https://towardsdatascience.com/ansys-in-a-python-web-app-pa
 - If there is a need to specify a custom IP which can be used to host the web app so that it can be accessed externally within the network. Specify the `--ip` flag along with the address of the server. For example:
 
   ```bash
-  <path-to-python-exe>/python.exe <path-to-source-code>/pyAnsys_DPF_dash.py --ip 127.0.0.1
+python pyAnsys_DPF_dash.py --ip 0.0.0.0
   ```
 
 - Note, that you should have permissions to run the app on that IP address. i.e., it needs to be made public within the organization.
