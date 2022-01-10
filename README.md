@@ -12,7 +12,6 @@ See [Medium article](https://towardsdatascience.com/ansys-in-a-python-web-app-pa
 python pyAnsys_DPF_dash.py --ip 0.0.0.0
   ```
 
-- Note, that you should have permissions to run the app on that IP address. i.e., it needs to be made public within the organization.
-
+- Note, that exposing an application at "0.0.0.0" makes it accessible outside of your localhost.
   
 
