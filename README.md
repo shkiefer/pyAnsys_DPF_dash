@@ -6,7 +6,7 @@ See [Medium article](https://towardsdatascience.com/ansys-in-a-python-web-app-pa
 
 ## Updated Commit (ansys_customIP): Add Custom IP 
 
-- If there is a need to specify a custom IP which can be used to host the web app so that it can be accessed by anyone from an organization. Specify the `--ip` flag along with the address of the server. For Ex:
+- If there is a need to specify a custom IP which can be used to host the web app so that it can be accessed externally within the network. Specify the `--ip` flag along with the address of the server. For example:
 
   ```bash
   <path-to-python-exe>/python.exe <path-to-source-code>/pyAnsys_DPF_dash.py --ip 127.0.0.1
