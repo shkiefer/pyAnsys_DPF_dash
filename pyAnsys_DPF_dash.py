@@ -265,7 +265,7 @@ def dash_vtk_update_comp_options(res_name, example_name):
     State(f'{APP_ID}_example_result_dropdown','value'),
     State(f'{APP_ID}_example_comp_dropdown', 'value'),
     State(f'{APP_ID}_example_tf_dropdown', 'value')
-)
+) 
 def dash_vtk_update_grid(n_clicks, example_name, result_name, comp_idx, tf_idx):
 
     if any([v is None for v in [example_name, result_name, tf_idx]]):
@@ -320,5 +320,17 @@ def dash_vtk_update_grid(n_clicks, example_name, result_name, comp_idx, tf_idx):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Launch PyDPF sample dash server')
+    parser.add_argument('--ip', type=str, metavar='',
+                        required=False,
+                        help='Set the IP address of the server')
+
+    args = parser.parse_args()
+
+    if args.ip:
+        app.run_server(debug=True, host=args.ip)
+    else:
+        app.run_server(debug=True)
 
